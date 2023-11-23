@@ -1,4 +1,3 @@
-  
 import {useEffect, useState} from "react"
 import MUIDataTable from "mui-datatables";
 import { CircularProgress, Alert, AlertTitle, Snackbar } from '@mui/material';
@@ -135,7 +134,7 @@ const columns = [
         label: "Actions",
         options: {
             customBodyRender: id => {          
-              console.log("ID id "+id)      
+              //console.log("ID id "+id)      
                 return (
                     <Stack direction="row" spacing={1}>
                         <IconButton aria-label="add" color="primary" onClick={() => openEditDialog(id)}>
@@ -178,7 +177,7 @@ const options = {
                     showSuccess={setShowSuccessAlert}
                     showFailure={setShowFailureAlert}
 
-                />}
+        />}
         {showSuccessAlert && (
               <Snackbar
               anchorOrigin={{
